@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Buttons from "./components/Buttons";
 import Table from "./components/Table";
 import Banner from "./components/Banner";
-import satData from './satData'; 
+import satData from './components/satData'; 
+
 function App() {
   const [sat, setSat] = useState(satData);
 
