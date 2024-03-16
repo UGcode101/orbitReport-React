@@ -1,7 +1,7 @@
 import React from 'react';
 import satData from './satData'; 
 
-const Buttons = ({ filterByType, setSat, displaySats }) => {
+const Buttons = ({ filterByType, resetToAllSats, displaySats }) => {
   return (
     <div>
       {displaySats.map((sat, id) => (
@@ -9,7 +9,7 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
           {sat} Orbit
         </button>
       ))}
-      <button onClick={() => setSat(satData)}>All Orbits</button>
+      <button onClick={resetToAllSats}>All Orbits</button>
     </div>
   );
 };

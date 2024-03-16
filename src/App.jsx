@@ -14,11 +14,16 @@ function App() {
     setSat(filteredSats);
   };
 
+  const resetToAllSats = () => {
+    setSat(satData); // Resets to all satellites
+  };
+
   return (
     <>
       <Banner />
       <Buttons
         filterByType={filterByType}
+        resetToAllSats={resetToAllSats} // Passing the new function as a prop
         displaySats={displaySats}
       />
       <Table sat={sat} />
