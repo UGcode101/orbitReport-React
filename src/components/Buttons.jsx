@@ -17,4 +17,3 @@ const Buttons = ({ filterByType, resetToAllSats, displaySats }) => {
 export default Buttons;
 
 
-// lock file?

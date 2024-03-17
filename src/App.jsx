@@ -15,7 +15,7 @@ function App() {
   };
 
   const resetToAllSats = () => {
-    setSat(satData); // Resets to all satellites
+    setSat(satData); 
   };
 
   return (
@@ -23,7 +23,7 @@ function App() {
       <Banner />
       <Buttons
         filterByType={filterByType}
-        resetToAllSats={resetToAllSats} // Passing the new function as a prop
+        resetToAllSats={resetToAllSats} 
         displaySats={displaySats}
       />
       <Table sat={sat} />
